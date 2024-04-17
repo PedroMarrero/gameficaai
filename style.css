@@ -122,11 +122,11 @@ h2 {
     margin-bottom: 100px;
 }
 
-#cases h2{
+#cases h2 {
     margin-bottom: 70px;
 }
 
-.container-cards{
+.container-cards {
     display: flex;
     justify-content: space-between;
 }
@@ -149,7 +149,7 @@ h2 {
 
     border-radius: 4px;
 
-    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .card img {
@@ -183,8 +183,8 @@ h2 {
 
     font-family: "Montserrat";
     font-size: 17px;
-    font font-weight: 600;
-    
+    font-weight: 600;
+
     cursor: pointer;
 
     transition: background-color 500ms ease;
@@ -194,7 +194,7 @@ h2 {
     background-color: #ad4929;
 }
 
-#portfolio{
+#portfolio {
     height: 250px;
     background-image: url(IMG/Bonecos.png);
     background-size: 250px;
@@ -202,9 +202,11 @@ h2 {
     background-attachment: fixed;
 
     position: relative;
+
+    margin-bottom: 120px;
 }
 
-.filtro{
+.filtro {
     width: 100%;
     height: 100%;
 
@@ -221,12 +223,109 @@ h2 {
     justify-content: center;
 }
 
-#portfolio a{ 
+#portfolio a {
+    width: fit-content;
+
     color: white;
 
     font-family: "Anta";
     font-size: 28px;
 
     z-index: 1;
-    
+    transition: 200ms;
+}
+
+#portfolio a:hover {
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+#contato {
+    text-align: center;
+
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#contato h2 {
+    margin-bottom: 70px;
+}
+
+#contato form {
+    width: 50%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    border-radius: 80px;
+    background-color: var(--roxo-gamefica);
+
+    color: white;
+    font-family: "Montserrat";
+    font-size: 17px;
+}
+
+.campo label {
+    text-align: left;
+
+}
+
+.campo {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.campo input{
+    height: 40px;
+
+    color: white;
+    background-color: #351865;
+
+    border: none;
+    border-radius: 4px; 
+}
+
+.campo-descricao textarea {
+    color: white;
+    background-color: #351865;
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo label, .campo-descricao label{
+    margin-bottom: 15px;
 }
