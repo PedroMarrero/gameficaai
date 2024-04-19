@@ -19,6 +19,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container-grid {
     width: 80vw;
     max-width: 1400px;
@@ -38,6 +42,10 @@
 
 header {
     height: 165px;
+}
+
+header button{
+    display: none;
 }
 
 header img {
@@ -89,6 +97,41 @@ nav.menu {
 
     font-family: "Anta";
     font-size: 32px;
+}
+
+.conteudo-banner span {
+    display: block;
+
+    overflow: hidden;
+
+    border-right: 5px solid var(--laranja-gamifica);
+    white-space: nowrap;
+
+    animation:
+        digitando 2s steps(40, end),
+        cursor 0.75s step-end infinite;
+}
+
+@keyframes digitando {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--laranja-gamifica);
+    }
 }
 
 #sobre {
@@ -369,17 +412,17 @@ h2 {
     background-color: #ad4929;
 }
 
-footer{
+footer {
     height: 290px;
 
     background-color: var(--roxo-gamefica);
 }
 
-footer .container-grid{
+footer .container-grid {
     height: 100%;
 
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -389,26 +432,78 @@ footer .container-grid{
     justify-content: space-between;
 }
 
-.redes-sociais p{
+.redes-sociais p {
     color: #fff;
     font-family: "Anta";
     font-size: 24px;
     align-items: flex-end;
 }
 
-.icones-redes{
+.icones-redes {
     width: 240px;
 
     display: flex;
     justify-content: space-between;
 }
 
-.icones-redes a{
+.icones-redes a {
     color: white;
 
 }
 
-.icones-redes a:hover{
+.icones-redes a:hover {
     color: var(--laranja-gamifica);
 }
 
+@media screen and (max-width: 1300px) {
+    header {
+        position: relative;
+    }
+
+    header button{
+        width: 50px;
+
+        display: unset;
+
+        background: none;
+        border: none;
+    }
+
+    header svg{
+        fill: white;
+        
+    }
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        background-color: #000000da;
+
+        position: absolute;
+        top: 165px;
+        right: 0px;
+    }
+
+    #sobre {
+        padding: 100px 15%;
+    }
+
+    .card {
+        height: 320px;
+        width: 200px;
+    }
+
+    #contato form {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    
+}
