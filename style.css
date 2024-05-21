@@ -61,7 +61,7 @@ header .container-grid {
 
 }
 
-nav.menu {
+.menu {
     width: 700px;
     display: flex;
     justify-content: space-between;
@@ -454,6 +454,11 @@ footer .container-grid {
 .icones-redes a:hover {
     color: var(--laranja-gamifica);
 }
+
+.menu-fechado{
+    display: none;
+}
+
 
 @media screen and (max-width: 1300px) {
     header {
