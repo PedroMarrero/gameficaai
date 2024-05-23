@@ -42,19 +42,20 @@ html {
     position: relative;
 }
 
-.primeiro-banner{
+.primeiro-banner {
     background-image: linear-gradient(90deg, rgb(156, 8, 164) 0%, rgba(78, 1, 210, 0.8) 100%), url(IMG/bg-room.png);
 }
 
-.segundo-banner{
+.segundo-banner {
     background-image: linear-gradient(90deg, rgba(24, 24, 104, 1) 0%, rgba(210, 0, 193, 0.8) 100%), url(IMG/bg-room.png);
 }
 
-.terceiro-banner{
+.terceiro-banner {
     background-image: linear-gradient(90deg, rgba(104, 24, 104, 1) 0%, rgba(24, 24, 104, 0.8) 100%), url(IMG/bg-room.png);
 }
 
-#botao-voltar, #botao-proximo{
+#botao-voltar,
+#botao-proximo {
     width: 30px;
 
     background: none;
@@ -65,16 +66,48 @@ html {
     position: absolute;
 }
 
-#botao-voltar svg, #botao-proximo svg{
+#botao-voltar svg,
+#botao-proximo svg {
     fill: #ffffff76;
 }
 
-#botao-voltar{
+#botao-voltar {
     left: 4%;
 }
 
-#botao-proximo{
+#botao-proximo {
     right: 4%;
+}
+
+.botoes {
+    width: 150px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    bottom: 4%;
+
+    /* centralizar usando position */
+    /* adicionar left 50% */
+    /* usar função calc() para subtrair metade da largura do elemento ex: 75px */
+    left: calc(50% - 75px);
+}
+
+.botoes button{
+    width: 30px;
+
+    display: unset;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.botoes button svg{
+    fill: #ffffff76;
+    
 }
 
 header {
@@ -492,11 +525,11 @@ footer .container-grid {
     color: var(--laranja-gamifica);
 }
 
-.menu-fechado{
+.menu-fechado {
     display: none;
 }
 
-#icone-barras{
+#icone-barras {
     display: none;
 }
 
